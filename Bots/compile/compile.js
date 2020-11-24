@@ -1,6 +1,6 @@
 const scriptName = "compile";
-const cRoomList = ['이헌우'];
-const roomList = ['꽃날~!', '스카니아 분래임', '꽃날 부마'];
+const cRoomList = [];
+const roomList = [];
 
 function response(room, msg, sender, isGroupChat, replier, imageDB, packageName) {
 	if(cRoomList.includes(room) == true) {

@@ -1,6 +1,6 @@
 const scriptName = "info";
 // 지원 카톡방 리스트
-const roomList = ['꽃날~!', '스카니아 분래임', '꽃날 부마'];
+const roomList = [];
 const expAll = FileStream.read('/sdcard/Download/Bots/info/exp_all.txt').split('\n');
 const typeList = ['파프', '앱솔', '앜셰', '방어구']; // 0 1 2 3
 const optList = [
@@ -15,13 +15,7 @@ function response(room, msg, sender, isGroupChat, replier, imageDB, packageName)
 	if(roomList.includes(room) == true) {
 		let data = msg.split(' ');
 		if(data[0][0] == '!') {
-			if(data[0] == '!헌티드') {
-				let txt = 'http://www.inven.co.kr/board/maple/2304/24209';
-				
-				if(Api.canReply(room)) {
-					Api.replyRoom(room, txt);
-				}
-			} else if(data[0] == '!검색') {
+			if(data[0] == '!검색') {
 				let name = data[1];
 				
 				if(name === undefined || name == "") {
