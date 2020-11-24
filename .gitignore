@@ -1,0 +1,13 @@
+editor_shortcuts.txt
+FATAL_ERROR_LOG.log
+GLOBAL_LOG.json
+
+flagCache/
+Database/
+global_modules/
+
+Bots/fun/
+Bots/mom/
+Bots/test/
+Bots/*/modules/
+Bots/*/bot.json
